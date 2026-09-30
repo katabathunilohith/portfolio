@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en" class="js-pending">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lohith Katabathuni — Portfolio</title>
+  <meta name="description" content="Portfolio of Lohith Katabathuni — B.Tech CSE (Product Engineering with AI) at SRM University AP. Full-stack developer and competitive programmer.">
+  <meta name="author" content="Lohith Katabathuni">
+  <meta name="theme-color" content="#f1f1ee">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lohith Katabathuni — Portfolio">
+  <meta property="og:description" content="Developer · CS student · problem solver.">
+  <meta property="og:image" content="assets/img/portrait.webp">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d0d0d'/%3E%3Ctext x='32' y='43' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='28' text-anchor='middle' fill='%23f1f1ee'%3ELK%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Grand+Hotel&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="image" href="assets/img/hero-silhouette.webp" type="image/webp">
+  <link rel="preload" as="image" href="assets/img/hero-mono.webp" type="image/webp">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.replace('js-pending', 'js');
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  </script>
+</head>
+<body class="is-loading">
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__line loader__line--top"></span>
+      <div class="loader__row">
+        <span class="loader__mask"><span>LOADING</span></span>
+        <span class="loader__mask"><span id="loaderCount">000</span></span>
+      </div>
+      <span class="loader__line loader__line--bottom"><i class="loader__bar" id="loaderBar"></i></span>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="header">
+    <a href="#top" class="logo h-item" aria-label="Lohith Katabathuni, back to top">LOHITH</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work" class="nav__link roll h-item" data-section="work"><span class="roll__inner" data-text="WORK">WORK</span></a>
+      <a href="#disciplines" class="nav__link roll h-item" data-section="disciplines"><span class="roll__inner" data-text="DISCIPLINES">DISCIPLINES</span></a>
+      <a href="#beyond" class="nav__link roll h-item" data-section="beyond"><span class="roll__inner" data-text="BEYOND CODE">BEYOND CODE</span></a>
+      <a href="#about" class="nav__link roll h-item" data-section="about"><span class="roll__inner" data-text="ABOUT">ABOUT</span></a>
+      <a href="#contact" class="nav__link roll h-item" data-section="contact"><span class="roll__inner" data-text="CONTACT">CONTACT</span></a>
+    </nav>
+    <button class="menu-btn roll h-item" type="button" aria-expanded="false" aria-controls="menu"><span class="roll__inner" data-text="CLOSE">MENU</span></button>
+  </header>
+
+  <!-- mobile menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__nav" aria-label="Mobile">
+      <a href="#work" class="menu__link"><span class="line"><span>WORK<sup>01</sup></span></span></a>
+      <a href="#disciplines" class="menu__link"><span class="line"><span>DISCIPLINES<sup>02</sup></span></span></a>
+      <a href="#beyond" class="menu__link"><span class="line"><span>BEYOND CODE<sup>03</sup></span></span></a>
+      <a href="#about" class="menu__link"><span class="line"><span>ABOUT<sup>04</sup></span></span></a>
+      <a href="#contact" class="menu__link"><span class="line"><span>CONTACT<sup>05</sup></span></span></a>
+    </nav>
+    <div class="menu__foot">
+      <a href="mailto:katabathuni.lohith@gmail.com">katabathuni.lohith@gmail.com</a>
+      <a href="https://github.com/katabathunilohith" target="_blank" rel="noopener">GITHUB ↗</a>
+    </div>
+  </div>
+
+  <!-- cursor follower -->
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"><span>VIEW</span></div></div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-label="Introduction">
+      <div class="hero__stage" id="heroStage">
+        <h1 class="sr-only">Lohith Katabathuni — Portfolio</h1>
+
+        <div class="hero__textwrap">
+          <canvas class="hero__glitch" id="heroGlitch" aria-hidden="true"></canvas>
+        </div>
+
+        <div class="hero__person">
+          <div class="hero__person-inner">
+            <img class="hero__img hero__img--mono" src="assets/img/hero-mono.webp" alt="" width="1314" height="1830" decoding="async" draggable="false">
+            <img class="hero__img hero__img--sil" src="assets/img/hero-silhouette.webp" alt="Portrait of Lohith Katabathuni" width="1314" height="1830" decoding="async" draggable="false">
+          </div>
+        </div>
+
+        <i class="hero__shade" aria-hidden="true"></i>
+
+        <div class="cap cap--l" data-i="0">
+          <span class="cap__label">01 — PERSPECTIVE</span>
+          <p class="cap__title"><span class="line"><span>SEEING FROM</span></span><span class="line"><span>ANOTHER</span></span><span class="line"><span>ANGLE</span></span></p>
+          <i class="cap__rule"></i>
+          <span class="cap__sub">Developer · CS student · problem solver</span>
+        </div>
+        <div class="cap cap--r" data-i="1">
+          <span class="cap__label">THE STACK CHANGES</span>
+          <p class="cap__title"><span class="line"><span>NOT THE</span></span><span class="line"><span>CRAFT</span></span></p>
+          <i class="cap__rule"></i>
+          <span class="cap__sub">C++ to React, Spring Boot to Node — same obsession.</span>
+        </div>
+        <div class="cap cap--l" data-i="2">
+          <span class="cap__label">02 — PROCESS</span>
+          <p class="cap__title"><span class="line"><span>FROM PROBLEM</span></span><span class="line"><span>TO PRODUCT</span></span></p>
+          <i class="cap__rule"></i>
+          <span class="cap__sub">B.Tech CSE · Product Engineering with AI</span>
+        </div>
+        <div class="cap cap--r" data-i="3">
+          <span class="cap__label">THE DETAILS</span>
+          <p class="cap__title"><span class="line"><span>LOOK</span></span><span class="line"><span>CLOSER</span></span></p>
+          <i class="cap__rule"></i>
+          <span class="cap__sub">Selected work below ↓</span>
+        </div>
+
+        <div class="hero__meta hero__meta--l h-meta"><span>SRM UNIVERSITY AP — CSE ’29</span></div>
+        <div class="hero__meta hero__meta--r h-meta"><span><b id="heroStep">01</b> / 04</span><i class="scroll-line"></i><span>SCROLL</span></div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="work__head container">
+        <h2 class="display-title" id="work-title" data-lines>
+          <span class="line"><span>CURATED</span></span>
+          <span class="line"><span>PROJECTS.</span></span>
+        </h2>
+        <div class="work__intro" data-fade>
+          <span class="micro">(01) SELECTED WORK — 2025/26</span>
+          <p>Hackathon builds, computer-vision research, real-time systems and pixel-accurate interface studies. Each one taught me something the syllabus didn’t.</p>
+        </div>
+      </div>
+
+      <div class="work__grid container">
+        <!-- Knit (hackathon) -->
+        <article class="project project--feature">
+          <a class="project__media" href="https://github.com/katabathunilohith/Knit" target="_blank" rel="noopener" data-cursor="REPO ↗" aria-label="Knit on GitHub">
+            <div class="project__mask"><div class="project__mask-inner"><div class="project__parallax">
+              <div class="poster poster--knit">
+                <svg class="knit__threads" viewBox="0 0 1000 450" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <path class="t1" d="M-30 250 C 120 120, 260 430, 430 300 S 700 90, 1030 210"/>
+                  <path class="t2" d="M-30 370 C 150 300, 300 190, 500 350 S 820 440, 1030 320"/>
+                  <path class="t3" d="M-30 175 C 190 250, 330 350, 560 225 S 860 120, 1030 135"/>
+                  <path class="t4" d="M 90 -30 C 170 170, 360 150, 420 480"/>
+                </svg>
+                <div class="knit__top"><span>KNIT — HACKATHON PROJECT</span><span>COLLABORATIVE COMMUNITY PLATFORM</span></div>
+                <span class="knit__word">KNIT</span>
+                <svg class="knit__threads knit__threads--front" viewBox="0 0 1000 450" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <path class="t1" d="M-30 250 C 120 120, 260 430, 430 300 S 700 90, 1030 210"/>
+                  <path class="t2" d="M-30 370 C 150 300, 300 190, 500 350 S 820 440, 1030 320"/>
+                  <path class="t3" d="M-30 175 C 190 250, 330 350, 560 225 S 860 120, 1030 135"/>
+                  <path class="t4" d="M 90 -30 C 170 170, 360 150, 420 480"/>
+                </svg>
+                <div class="knit__card knit__card--post">
+                  <div class="knit__head"><i class="knit__av" style="--c:#ff6b57">AK</i><span><b>Community</b> · #resources</span><em>now</em></div>
+                  <span class="knit__line" style="width:92%"></span>
+                  <span class="knit__line" style="width:68%"></span>
+                  <span class="knit__file"><i></i>dsa-notes.pdf<em>2.4 MB</em></span>
+                  <div class="knit__react"><span>♥ 24</span><span>6 replies</span><span>share ↗</span></div>
+                </div>
+                <div class="knit__card knit__card--profile">
+                  <i class="knit__av knit__av--lg" style="--c:#22c1b0">LK</i>
+                  <div><b>Profile updated</b><span>React · Node · Express</span></div>
+                </div>
+                <div class="knit__presence"><i></i>members online<span class="knit__stack"><i style="--c:#ff6b57"></i><i style="--c:#f2b705"></i><i style="--c:#22c1b0"></i><i style="--c:#9d8cff"></i></span></div>
+              </div>
+            </div></div></div>
+          </a>
+          <div class="project__caption">
+            <h3>KNIT // COLLABORATIVE COMMUNITY PLATFORM</h3>
+            <span class="project__tags">HACKATHON · REACT · NODE.JS · EXPRESS · MONGODB / POSTGRESQL</span>
+            <i class="project__rule"></i>
+          </div>
+        </article>
+
+        <div class="project-row">
+          <!-- IEEE SA P3382 -->
+          <article class="project">
+            <a class="project__media" href="https://github.com/katabathunilohith" target="_blank" rel="noopener" data-cursor="GITHUB ↗" aria-label="IEEE SA P3382 image quality research">
+              <div class="project__mask"><div class="project__mask-inner"><div class="project__parallax">
+                <div class="poster poster--mri">
+                  <canvas class="mri__canvas" data-visual="mri" aria-hidden="true"></canvas>
+                  <i class="mri__corner c1"></i><i class="mri__corner c2"></i><i class="mri__corner c3"></i><i class="mri__corner c4"></i>
+                  <i class="mri__cross"></i>
+                  <div class="poster__top"><span>IEEE SA P3382</span><span class="rec"><i></i>ONGOING</span></div>
+                  <div class="mri__readout">
+                    <span>OASIS MRI · RICIAN NOISE σ = 0.05</span>
+                    <div class="mri__metrics"><span>PSNR</span><span>SSIM</span><span>HaarPSI</span><span>DISTS</span><span>BRISQUE</span></div>
+                  </div>
+                  <div class="poster__foot"><span>IMAGE QUALITY · CV METRICS</span><span>PYTHON · PIQ</span></div>
+                </div>
+              </div></div></div>
+            </a>
+            <div class="project__caption">
+              <h3>IEEE SA P3382 // IMAGE QUALITY &amp; CV METRICS</h3>
+              <span class="project__tags">PYTHON · PYTORCH · PIQ · MRI</span>
+              <i class="project__rule"></i>
+            </div>
+          </article>
+
+          <!-- Interstellar -->
+          <article class="project project--offset">
+            <a class="project__media" href="https://github.com/katabathunilohith" target="_blank" rel="noopener" data-cursor="GITHUB ↗" aria-label="Prime Video Interstellar clone">
+              <div class="project__mask"><div class="project__mask-inner"><div class="project__parallax">
+                <div class="poster poster--space">
+                  <canvas class="space__canvas" data-visual="blackhole" aria-hidden="true"></canvas>
+                  <div class="space__top"><span>PRIME VIDEO — UI CLONE</span><span>4K UHD · HDR</span></div>
+                  <div class="space__title">
+                    <span class="space__name">INTERSTELLAR</span>
+                    <span class="space__meta">2014 · 2H 49M · SCI-FI · ADVENTURE</span>
+                    <div class="space__actions"><span class="space__play">▶&nbsp;&nbsp;PLAY</span><span class="space__add">+&nbsp;&nbsp;WATCHLIST</span></div>
+                    <div class="space__progress"><i></i></div>
+                  </div>
+                </div>
+              </div></div></div>
+            </a>
+            <div class="project__caption">
+              <h3>PRIME VIDEO // INTERSTELLAR EDITION</h3>
+              <span class="project__tags">INTERFACE CLONE · THEMED UI</span>
+              <i class="project__rule"></i>
+            </div>
+          </article>
+        </div>
+
+        <!-- Omegle -->
+        <article class="project project--feature">
+          <a class="project__media" href="https://github.com/katabathunilohith/omegleClone" target="_blank" rel="noopener" data-cursor="REPO ↗" aria-label="Omegle clone on GitHub">
+            <div class="project__mask"><div class="project__mask-inner"><div class="project__parallax">
+              <div class="poster poster--omegle">
+                <div class="om__top"><span>OMEGLE CLONE — 2026</span><span>SOCKET.IO SIGNALING ⇄ WEBRTC P2P</span></div>
+                <div class="om__type">
+                  <span class="om__small">TALK TO</span>
+                  <span class="om__big">STRANGERS</span>
+                </div>
+                <div class="om__tiles">
+                  <div class="om__tile om__tile--them">
+                    <span class="om__live"><i></i>STRANGER</span>
+                    <svg class="om__avatar" viewBox="0 0 100 80" aria-hidden="true"><circle cx="50" cy="30" r="15"/><path d="M16 80c2-20 16-31 34-31s32 11 34 31z"/></svg>
+                    <span class="om__ping">42 ms</span>
+                  </div>
+                  <div class="om__tile om__tile--you">
+                    <span class="om__live"><i></i>YOU</span>
+                    <svg class="om__avatar" viewBox="0 0 100 80" aria-hidden="true"><circle cx="50" cy="30" r="15"/><path d="M16 80c2-20 16-31 34-31s32 11 34 31z"/></svg>
+                  </div>
+                  <span class="om__bubble om__bubble--1">hey! where are you from?</span>
+                  <span class="om__bubble om__bubble--2">earth, mostly.</span>
+                </div>
+                <div class="om__say">SAY<br>HI.</div>
+              </div>
+            </div></div></div>
+          </a>
+          <div class="project__caption">
+            <h3>OMEGLE CLONE // REAL-TIME VIDEO CHAT</h3>
+            <span class="project__tags">REACT · SOCKET.IO · WEBRTC · EXPRESS</span>
+            <i class="project__rule"></i>
+          </div>
+        </article>
+
+        <div class="project-row">
+          <!-- Instagram -->
+          <article class="project">
+            <a class="project__media" href="https://github.com/katabathunilohith" target="_blank" rel="noopener" data-cursor="GITHUB ↗" aria-label="Instagram login page clone">
+              <div class="project__mask"><div class="project__mask-inner"><div class="project__parallax">
+                <div class="poster poster--insta">
+                  <span class="ig__word">LOG<br>IN</span>
+                  <div class="ig__phone">
+                    <span class="ig__notch"></span>
+                    <span class="ig__logo">Instagram</span>
+                    <span class="ig__input">Phone number, username, or email</span>
+                    <span class="ig__input">Password</span>
+                    <span class="ig__btn">Log in</span>
+                    <span class="ig__or"><i></i>OR<i></i></span>
+                    <span class="ig__forgot">Forgot password?</span>
+                  </div>
+                  <div class="poster__foot"><span>INSTAGRAM — LOGIN CLONE</span><span>HTML · CSS · JS</span></div>
+                </div>
+              </div></div></div>
+            </a>
+            <div class="project__caption">
+              <h3>INSTAGRAM // LOGIN PAGE CLONE</h3>
+              <span class="project__tags">HTML · CSS · JAVASCRIPT</span>
+              <i class="project__rule"></i>
+            </div>
+          </article>
+
+          <!-- X -->
+          <article class="project project--offset">
+            <a class="project__media" href="https://github.com/katabathunilohith" target="_blank" rel="noopener" data-cursor="GITHUB ↗" aria-label="X login page clone">
+              <div class="project__mask"><div class="project__mask-inner"><div class="project__parallax">
+                <div class="poster poster--x">
+                  <span class="x__glyph">X</span>
+                  <div class="x__content">
+                    <span class="x__h1">Happening now</span>
+                    <span class="x__h2">Join today.</span>
+                    <span class="x__btn x__btn--primary">Create account</span>
+                    <span class="x__fine">By signing up, you agree to the Terms of Service and Privacy Policy.</span>
+                    <span class="x__h3">Already have an account?</span>
+                    <span class="x__btn x__btn--ghost">Sign in</span>
+                  </div>
+                  <div class="poster__foot"><span>X — LOGIN PAGE CLONE</span><span>PIXEL-ACCURATE</span></div>
+                </div>
+              </div></div></div>
+            </a>
+            <div class="project__caption">
+              <h3>X (TWITTER) // LOGIN PAGE CLONE</h3>
+              <span class="project__tags">HTML · CSS · UI STUDY</span>
+              <i class="project__rule"></i>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-row">
+          <!-- File similarity -->
+          <article class="project">
+            <a class="project__media" href="https://github.com/katabathunilohith/File_Comparator" target="_blank" rel="noopener" data-cursor="REPO ↗" aria-label="File Comparator on GitHub">
+              <div class="project__mask"><div class="project__mask-inner"><div class="project__parallax">
+                <div class="poster poster--diff">
+                  <div class="poster__top"><span>FILE SIMILARITY CHECKER</span><span>A ⇄ B</span></div>
+                  <svg class="diff__svg" data-visual="diff" viewBox="0 0 400 270" aria-hidden="true"></svg>
+                  <div class="diff__score">
+                    <span class="diff__num">87<small>%</small></span>
+                    <div class="diff__side">
+                      <span>SIMILARITY SCORE</span>
+                      <span class="diff__meter"><i></i></span>
+                      <span>WORD-LEVEL COMPARISON</span>
+                    </div>
+                  </div>
+                </div>
+              </div></div></div>
+            </a>
+            <div class="project__caption">
+              <h3>FILE SIMILARITY // FILE COMPARATOR</h3>
+              <span class="project__tags">JAVA · SPRING BOOT · HTML · JS</span>
+              <i class="project__rule"></i>
+            </div>
+          </article>
+
+          <!-- Job allocation -->
+          <article class="project project--offset">
+            <a class="project__media" href="https://github.com/katabathunilohith" target="_blank" rel="noopener" data-cursor="GITHUB ↗" aria-label="Job allocation program in Java">
+              <div class="project__mask"><div class="project__mask-inner"><div class="project__parallax">
+                <div class="poster poster--jobs">
+                  <span class="jobs__title">JOB<br>ALLOCATION</span>
+                  <span class="jobs__java">JAVA</span>
+                  <svg class="jobs__svg" data-visual="gantt" viewBox="0 0 400 236" aria-hidden="true"></svg>
+                  <div class="poster__foot"><span>CONSTRAINT-BASED TASK ASSIGNMENT</span><span>OOP · JAVA</span></div>
+                </div>
+              </div></div></div>
+            </a>
+            <div class="project__caption">
+              <h3>JOB ALLOCATION // JAVA</h3>
+              <span class="project__tags">JAVA · CONSTRAINTS · SCHEDULING</span>
+              <i class="project__rule"></i>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-row">
+          <!-- Tally counter -->
+          <article class="project">
+            <a class="project__media" href="https://github.com/katabathunilohith" target="_blank" rel="noopener" data-cursor="GITHUB ↗" aria-label="Tally counter and utilities">
+              <div class="project__mask"><div class="project__mask-inner"><div class="project__parallax">
+                <div class="poster poster--tally">
+                  <div class="poster__top"><span>MISCELLANEOUS</span><span>SMALL UTILITIES</span></div>
+                  <div class="tally__device">
+                    <div class="tally__screen"><span class="tally__digits" data-tally>0042</span></div>
+                    <div class="tally__keys"><span class="tally__key tally__key--minus">−</span><span class="tally__key tally__key--plus">+</span></div>
+                    <span class="tally__reset">RESET</span>
+                  </div>
+                  <span class="tally__title">TALLY<br>COUNTER</span>
+                </div>
+              </div></div></div>
+            </a>
+            <div class="project__caption">
+              <h3>TALLY COUNTER // &amp; OTHER UTILITIES</h3>
+              <span class="project__tags">JAVASCRIPT · MICRO APPS</span>
+              <i class="project__rule"></i>
+            </div>
+          </article>
+
+          <!-- All repositories -->
+          <article class="project project--offset">
+            <a class="project__media" href="https://github.com/katabathunilohith?tab=repositories" target="_blank" rel="noopener" data-cursor="GITHUB ↗" aria-label="All repositories on GitHub">
+              <div class="project__mask"><div class="project__mask-inner"><div class="project__parallax">
+                <div class="poster poster--gh">
+                  <div class="poster__top"><span>ARCHIVE</span><span>@KATABATHUNILOHITH</span></div>
+                  <div class="gh__term">
+                    <div class="gh__bar"><i></i><i></i><i></i><span>zsh — repos</span></div>
+                    <div class="gh__body">
+                      <p><b>$</b> gh repo list</p>
+                      <p><span>Knit</span><em>TypeScript</em></p>
+                      <p><span>omegleClone</span><em>JavaScript</em></p>
+                      <p><span>File_Comparator</span><em>Java</em></p>
+                      <p><span>Stock-Price-Prediction-ML</span><em>Python</em></p>
+                      <p><span>issuetracker</span><em>JavaScript</em></p>
+                      <p><span>Hack4Impact_SOLANA</span><em>HTML</em></p>
+                      <p><b>$</b> <i class="gh__caret"></i></p>
+                    </div>
+                  </div>
+                  <span class="gh__title">MORE ON<br>GITHUB <em>↗</em></span>
+                </div>
+              </div></div></div>
+            </a>
+            <div class="project__caption">
+              <h3>MORE WORK // ALL REPOSITORIES</h3>
+              <span class="project__tags">OPEN SOURCE · FORKS · CONTRIBUTIONS</span>
+              <i class="project__rule"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DECK (dark) ============ -->
+    <section class="deck" id="disciplines" aria-labelledby="deck-title">
+      <div class="deck__head container">
+        <div>
+          <span class="micro micro--light" data-fade><i class="dot"></i> 02 — SPECIALIZATIONS</span>
+          <h2 class="display-title deck__title" id="deck-title" data-lines><span class="line"><span>STACK DECK // DISCIPLINES</span></span></h2>
+        </div>
+        <div class="deck__hint micro micro--light" data-fade><span>INTERACTIVE STACK DECK</span><span class="sep">|</span><span>HOVER &amp; SELECT CARDS</span></div>
+      </div>
+      <div class="deck__rule container"><i></i></div>
+
+      <div class="deck__tabs" role="tablist" aria-label="Disciplines">
+        <button class="deck__tab is-active" role="tab" aria-selected="true" data-index="0">LANGUAGES</button>
+        <button class="deck__tab" role="tab" aria-selected="false" data-index="1">FRONTEND</button>
+        <button class="deck__tab" role="tab" aria-selected="false" data-index="2">BACKEND</button>
+        <button class="deck__tab" role="tab" aria-selected="false" data-index="3">DATA &amp; AUTH</button>
+        <button class="deck__tab" role="tab" aria-selected="false" data-index="4">CLOUD &amp; TOOLS</button>
+        <button class="deck__tab" role="tab" aria-selected="false" data-index="5">CORE CS</button>
+      </div>
+
+      <div class="deck__stage">
+        <!-- 01 LANGUAGES -->
+        <article class="dcard" data-index="0" data-detail="C, C++, Java, Python and JavaScript — five languages, one mindset: from low-level C to full-stack JavaScript.">
+          <div class="dcard__top"><span>01</span><span>LANGUAGES</span></div>
+          <svg class="dcard__art" viewBox="0 0 240 200" aria-hidden="true">
+            <text x="122" y="168" text-anchor="middle" font-family="Anton" font-size="196" fill="none" stroke="rgba(255,255,255,.13)" stroke-width="1.2">{ }</text>
+            <circle cx="196" cy="54" r="21" fill="#ff5a1f"/>
+            <text x="24" y="66" font-family="Anton" font-size="40" fill="#f2f2ee">C / C++</text>
+            <text x="24" y="108" font-family="Anton" font-size="40" fill="none" stroke="#f2f2ee" stroke-width="1">JAVA</text>
+            <text x="24" y="150" font-family="Anton" font-size="40" fill="#f2f2ee">PYTHON</text>
+            <text x="164" y="150" font-family="Anton" font-size="40" fill="#ff5a1f">JS</text>
+            <text x="24" y="182" font-family="JetBrains Mono" font-size="8.5" fill="rgba(255,255,255,.45)" letter-spacing="1.5">int main() { return 0; }</text>
+          </svg>
+          <div class="dcard__body">
+            <span class="dcard__kicker">SYNTAX &amp; SEMANTICS</span>
+            <h3 class="dcard__title">LANGUAGES</h3>
+            <div class="dcard__tags"><span>C</span><span>C++</span><span>JAVA</span><span>PYTHON</span><span>JS</span></div>
+          </div>
+          <i class="dcard__glare"></i>
+        </article>
+
+        <!-- 02 FRONTEND -->
+        <article class="dcard" data-index="1" data-detail="Semantic HTML, modern CSS, React and Tailwind — plus a habit of recreating real products pixel for pixel.">
+          <div class="dcard__top"><span>02</span><span>FRONTEND</span></div>
+          <svg class="dcard__art" viewBox="0 0 240 200" aria-hidden="true">
+            <rect x="20" y="30" width="196" height="138" rx="8" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.45)"/>
+            <line x1="20" y1="48" x2="216" y2="48" stroke="rgba(255,255,255,.25)"/>
+            <circle cx="32" cy="39" r="3" fill="#ff5a1f"/><circle cx="43" cy="39" r="3" fill="rgba(255,255,255,.45)"/><circle cx="54" cy="39" r="3" fill="rgba(255,255,255,.45)"/>
+            <rect x="32" y="60" width="84" height="10" rx="2" fill="#f2f2ee"/>
+            <rect x="32" y="76" width="60" height="5" rx="2" fill="rgba(255,255,255,.35)"/>
+            <rect x="32" y="86" width="70" height="5" rx="2" fill="rgba(255,255,255,.2)"/>
+            <rect x="32" y="102" width="50" height="54" rx="4" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.28)"/>
+            <rect x="88" y="102" width="50" height="54" rx="4" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.28)"/>
+            <circle cx="174" cy="104" r="42" fill="none" stroke="#ff5a1f" stroke-width="13"/>
+            <path d="M166 124 v30 l7.5-7 l6.5 13 l5.5-2.6 l-6.5-12.6 h10.5 z" fill="#fff" stroke="#111" stroke-width="1.2" stroke-linejoin="round"/>
+          </svg>
+          <div class="dcard__body">
+            <span class="dcard__kicker">INTERFACES THAT FEEL RIGHT</span>
+            <h3 class="dcard__title">FRONTEND</h3>
+            <div class="dcard__tags"><span>HTML</span><span>CSS</span><span>REACT</span><span>TAILWIND</span><span>BOOTSTRAP</span></div>
+          </div>
+          <i class="dcard__glare"></i>
+        </article>
+
+        <!-- 03 BACKEND -->
+        <article class="dcard" data-index="2" data-detail="REST APIs with Spring Boot and Node/Express, and real-time signaling with Socket.IO.">
+          <div class="dcard__top"><span>03</span><span>BACKEND</span></div>
+          <svg class="dcard__art" viewBox="0 0 240 200" aria-hidden="true">
+            <g stroke="rgba(255,255,255,.35)" stroke-width="1" fill="none">
+              <path d="M120 96 L46 46"/><path d="M120 96 L196 44"/><path d="M120 96 L40 150"/><path d="M120 96 L202 146"/><path d="M120 96 L122 176"/>
+              <path d="M46 46 L196 44" stroke-dasharray="3 4" stroke="rgba(255,255,255,.18)"/>
+            </g>
+            <g fill="#15181a" stroke="#f2f2ee" stroke-width="1.2">
+              <circle cx="46" cy="46" r="11"/><circle cx="196" cy="44" r="11"/><circle cx="40" cy="150" r="11"/><circle cx="202" cy="146" r="11"/><circle cx="122" cy="176" r="9"/>
+            </g>
+            <circle cx="120" cy="96" r="24" fill="#ff5a1f"/>
+            <text x="120" y="100" text-anchor="middle" font-family="JetBrains Mono" font-weight="700" font-size="11" fill="#111">API</text>
+            <g font-family="JetBrains Mono" font-size="7.5" fill="rgba(255,255,255,.6)" letter-spacing="1">
+              <text x="30" y="28">AUTH</text><text x="182" y="26">DB</text><text x="16" y="174">CLIENT</text><text x="186" y="170">SOCKET</text>
+            </g>
+            <g font-family="JetBrains Mono" font-size="7" fill="rgba(255,255,255,.4)">
+              <text x="136" y="80">GET /users 200</text>
+            </g>
+          </svg>
+          <div class="dcard__body">
+            <span class="dcard__kicker">APIS &amp; SERVICES</span>
+            <h3 class="dcard__title">BACKEND</h3>
+            <div class="dcard__tags"><span>SPRING BOOT</span><span>NODE.JS</span><span>EXPRESS</span><span>REST</span></div>
+          </div>
+          <i class="dcard__glare"></i>
+        </article>
+
+        <!-- 04 DATA & AUTH -->
+        <article class="dcard" data-index="3" data-detail="Relational and document databases — MySQL and MongoDB — secured with JWT and Firebase Authentication.">
+          <div class="dcard__top"><span>04</span><span>DATA &amp; AUTH</span></div>
+          <svg class="dcard__art" viewBox="0 0 240 200" aria-hidden="true">
+            <g fill="rgba(255,255,255,.06)" stroke="#f2f2ee" stroke-width="1.1">
+              <path d="M24 60 v22 a34 10 0 0 0 68 0 v-22"/><ellipse cx="58" cy="60" rx="34" ry="10"/>
+              <path d="M24 96 v22 a34 10 0 0 0 68 0 v-22"/><path d="M24 96 a34 10 0 0 0 68 0"/>
+              <path d="M24 132 v22 a34 10 0 0 0 68 0 v-22" stroke="#ff5a1f"/><path d="M24 132 a34 10 0 0 0 68 0" stroke="#ff5a1f"/>
+            </g>
+            <g font-family="JetBrains Mono" font-size="9.2" letter-spacing=".3">
+              <text x="110" y="58" fill="#ff5a1f">eyJhbGciOiJIUzI1</text>
+              <text x="110" y="72" fill="#ff5a1f">NiIsInR5cCI6IkpX</text>
+              <text x="110" y="94" fill="#f2f2ee">.eyJzdWIiOiIxMjM</text>
+              <text x="110" y="108" fill="#f2f2ee">0NTY3ODkwIiwibmF</text>
+              <text x="110" y="130" fill="rgba(255,255,255,.45)">.SflKxwRJSMeKKF2Q</text>
+              <text x="110" y="144" fill="rgba(255,255,255,.45)">T4fwpMeJf36POk6y</text>
+            </g>
+            <g font-family="JetBrains Mono" font-size="6.5" fill="rgba(255,255,255,.5)" letter-spacing="1.2">
+              <text x="110" y="42">HEADER</text><text x="110" y="166">PAYLOAD · SIGNATURE</text>
+            </g>
+            <text x="26" y="40" font-family="JetBrains Mono" font-size="7" fill="rgba(255,255,255,.5)" letter-spacing="1.2">SQL · NOSQL</text>
+          </svg>
+          <div class="dcard__body">
+            <span class="dcard__kicker">STORAGE &amp; IDENTITY</span>
+            <h3 class="dcard__title">DATA &amp; AUTH</h3>
+            <div class="dcard__tags"><span>MYSQL</span><span>MONGODB</span><span>JWT</span><span>FIREBASE AUTH</span></div>
+          </div>
+          <i class="dcard__glare"></i>
+        </article>
+
+        <!-- 05 CLOUD & TOOLS -->
+        <article class="dcard" data-index="4" data-detail="A Git-driven workflow, API testing in Postman, and deployments on Vercel, Render and Firebase.">
+          <div class="dcard__top"><span>05</span><span>CLOUD &amp; TOOLS</span></div>
+          <svg class="dcard__art" viewBox="0 0 240 200" aria-hidden="true">
+            <g fill="none" stroke-width="2">
+              <path d="M56 22 V184" stroke="rgba(255,255,255,.55)"/>
+              <path d="M56 50 C56 70 104 62 104 84 V118 C104 140 56 132 56 152" stroke="#ff5a1f"/>
+            </g>
+            <g fill="#15181a" stroke="#f2f2ee" stroke-width="1.6">
+              <circle cx="56" cy="34" r="5.5"/><circle cx="56" cy="50" r="5.5"/><circle cx="56" cy="104" r="5.5"/><circle cx="56" cy="152" r="5.5"/><circle cx="56" cy="176" r="5.5"/>
+            </g>
+            <g fill="#ff5a1f"><circle cx="104" cy="88" r="5.5"/><circle cx="104" cy="116" r="5.5"/></g>
+            <g font-family="JetBrains Mono" font-size="7.5" letter-spacing=".8">
+              <text x="66" y="37" fill="rgba(255,255,255,.55)">main</text>
+              <text x="114" y="91" fill="#ff5a1f">feat/ui</text>
+              <text x="66" y="179" fill="rgba(255,255,255,.55)">v1.0</text>
+            </g>
+            <path d="M150 150 h-4 a13 13 0 0 1 2-25.8 a18 18 0 0 1 34.5-4.2 a14 14 0 0 1 11.5 30 z" fill="none" stroke="#f2f2ee" stroke-width="1.3"/>
+            <path d="M172 146 v-16 m-6 6 l6-6 l6 6" fill="none" stroke="#ff5a1f" stroke-width="1.6"/>
+            <text x="134" y="170" font-family="JetBrains Mono" font-size="6.5" fill="rgba(255,255,255,.5)" letter-spacing="1">DEPLOY</text>
+            <text x="120" y="30" font-family="JetBrains Mono" font-size="7.5" fill="rgba(255,255,255,.7)">$ git push</text>
+          </svg>
+          <div class="dcard__body">
+            <span class="dcard__kicker">SHIP IT</span>
+            <h3 class="dcard__title">CLOUD &amp; TOOLS</h3>
+            <div class="dcard__tags"><span>GIT</span><span>POSTMAN</span><span>VERCEL</span><span>RENDER</span><span>FIREBASE</span></div>
+          </div>
+          <i class="dcard__glare"></i>
+        </article>
+
+        <!-- 06 CORE CS -->
+        <article class="dcard" data-index="5" data-detail="Data structures &amp; algorithms, object-oriented design, DBMS and REST — sharpened by 390+ problems solved on CodeChef and LeetCode.">
+          <div class="dcard__top"><span>06</span><span>CORE CS</span></div>
+          <svg class="dcard__art" viewBox="0 0 240 200" aria-hidden="true">
+            <g stroke="rgba(255,255,255,.35)" stroke-width="1.2">
+              <line x1="120" y1="40" x2="70" y2="92"/><line x1="70" y1="92" x2="44" y2="144"/><line x1="70" y1="92" x2="96" y2="144"/>
+              <line x1="170" y1="92" x2="196" y2="144"/>
+            </g>
+            <g stroke="#ff5a1f" stroke-width="2.2"><line x1="120" y1="40" x2="170" y2="92"/><line x1="170" y1="92" x2="144" y2="144"/></g>
+            <g fill="#15181a" stroke="#f2f2ee" stroke-width="1.2">
+              <circle cx="70" cy="92" r="14"/><circle cx="44" cy="144" r="14"/><circle cx="96" cy="144" r="14"/><circle cx="196" cy="144" r="14"/>
+            </g>
+            <g fill="#ff5a1f"><circle cx="120" cy="40" r="14"/><circle cx="170" cy="92" r="14"/><circle cx="144" cy="144" r="14"/></g>
+            <g font-family="JetBrains Mono" font-weight="700" font-size="10" text-anchor="middle">
+              <text x="120" y="44" fill="#111">8</text><text x="70" y="96" fill="#f2f2ee">4</text><text x="170" y="96" fill="#111">12</text>
+              <text x="44" y="148" fill="#f2f2ee">2</text><text x="96" y="148" fill="#f2f2ee">6</text><text x="144" y="148" fill="#111">10</text><text x="196" y="148" fill="#f2f2ee">14</text>
+            </g>
+            <text x="22" y="186" font-family="JetBrains Mono" font-size="8.5" fill="rgba(255,255,255,.6)" letter-spacing="1">search(10) → O(log n)</text>
+          </svg>
+          <div class="dcard__body">
+            <span class="dcard__kicker">FIRST PRINCIPLES</span>
+            <h3 class="dcard__title">CORE CS</h3>
+            <div class="dcard__tags"><span>DSA</span><span>OOP</span><span>DBMS</span><span>REST</span></div>
+          </div>
+          <i class="dcard__glare"></i>
+        </article>
+      </div>
+
+      <p class="deck__detail" aria-live="polite"><span id="deckDetail">C, C++, Java, Python and JavaScript — five languages, one mindset: from low-level C to full-stack JavaScript.</span></p>
+    </section>
+
+    <!-- ============ BEYOND CODE (pinned coverflow) ============ -->
+    <section class="beyond" id="beyond" aria-labelledby="beyond-title">
+      <div class="beyond__pin">
+        <div class="beyond__head container">
+          <h2 class="display-title" id="beyond-title" data-lines><span class="line"><span>BEYOND CODE</span></span></h2>
+          <span class="micro beyond__hint" data-fade>SCROLL TO EXPLORE <span class="arrow">→</span></span>
+        </div>
+
+        <div class="beyond__stage">
+          <div class="flow">
+            <!-- 1 -->
+            <article class="fcard" data-link="https://github.com/katabathunilohith/Stock-Price-Prediction-ML" data-meta="INTERNSHIP — IIT BOMBAY · MOOD INDIGO" data-title="Machine Learning Internship" data-desc="Selected for IIT Bombay’s Mood Indigo ML internship program — built a model to predict stock prices with data preprocessing, feature engineering and model evaluation.">
+              <div class="fart fart--ml">
+                <div class="fart__head"><span>STOCK PRICE MODEL</span><span>ML · 01</span></div>
+                <svg class="ml__chart" data-visual="candles" viewBox="0 0 300 200" aria-hidden="true"></svg>
+                <div class="ml__legend"><span><i class="k1"></i>ACTUAL</span><span><i class="k2"></i>PREDICTED</span></div>
+                <span class="fart__label">IIT Bombay · Mood Indigo</span>
+              </div>
+            </article>
+            <!-- 2 -->
+            <article class="fcard" data-meta="ACHIEVEMENT — ADOBE HACKATHON 2026" data-title="Round 2 Qualifier" data-desc="Made it to the second round of the Adobe Hackathon 2026.">
+              <div class="fart fart--adobe">
+                <i class="ad__shape s1"></i><i class="ad__shape s2"></i>
+                <div class="fart__head"><span>HACKATHON 2026</span><span>ADOBE</span></div>
+                <span class="ad__round">ROUND</span>
+                <span class="ad__num">02</span>
+                <span class="fart__label">Qualified · Round 2</span>
+              </div>
+            </article>
+            <!-- 3 -->
+            <article class="fcard" data-meta="COMPETITIVE PROGRAMMING — CODECHEF" data-title="1★ · 1339 Rating" data-desc="322 problems solved with a 241-day continuous streak — one or two contests away from 2★.">
+              <div class="fart fart--cc">
+                <div class="fart__head"><span>CODECHEF</span><span>★ 1339</span></div>
+                <svg class="cc__map" data-visual="heatmap" viewBox="0 0 252 56" aria-hidden="true"></svg>
+                <div class="cc__stats"><div><b>322</b><span>SOLVED</span></div><div><b>241</b><span>DAY STREAK</span></div></div>
+                <span class="fart__label">Daily practice · streak</span>
+              </div>
+            </article>
+            <!-- 4 -->
+            <article class="fcard" data-meta="COMPETITIVE PROGRAMMING — LEETCODE" data-title="1414 Contest Rating" data-desc="70 problems solved on LeetCode, sharpening data structures and algorithmic patterns.">
+              <div class="fart fart--lc">
+                <div class="fart__head"><span>LEETCODE</span><span>CONTEST RATING</span></div>
+                <span class="lc__num">1414</span>
+                <svg class="lc__line" data-visual="rating" viewBox="0 0 300 110" preserveAspectRatio="none" aria-hidden="true"></svg>
+                <span class="fart__label">70 problems solved</span>
+              </div>
+            </article>
+            <!-- 5 -->
+            <article class="fcard" data-meta="ACADEMICS — SRM UNIVERSITY AP" data-title="Dean’s List · Semester 1" data-desc="Semester 1 SGPA 10.00 and Semester 2 SGPA 9.284 — a cumulative CGPA of 9.64 / 10.00.">
+              <div class="fart fart--dean">
+                <div class="fart__head"><span>DEAN’S LIST</span><span>SEM 1</span></div>
+                <span class="dn__num">10.00</span>
+                <span class="dn__sub">SEMESTER 1 · SGPA</span>
+                <div class="dn__rows">
+                  <div><span>CGPA</span><b>9.64</b></div>
+                  <div><span>SEM 2 SGPA</span><b>9.284</b></div>
+                </div>
+                <span class="fart__label">SRM University AP</span>
+              </div>
+            </article>
+            <!-- 6 -->
+            <article class="fcard" data-meta="CERTIFICATIONS — DEEPLEARNING.AI · ANTHROPIC" data-title="8 Certifications in AI" data-desc="Neural Networks and Deep Learning (DeepLearning.AI · Coursera) · Claude 101 · Claude Code 101 · Claude Platform 101 · Introduction to Claude Cowork · Claude Code in Action · AI Fluency: Framework &amp; Foundations · Building with the Claude API.">
+              <template class="fcard__desc"><a href="https://coursera.org/verify/XHOCTF6FYOV0" target="_blank" rel="noopener">Neural Networks and Deep Learning&nbsp;↗</a> (DeepLearning.AI · Coursera) · <a href="https://verify.skilljar.com/c/tdkjse3ngbuw" target="_blank" rel="noopener">Claude 101&nbsp;↗</a> · <a href="https://verify.skilljar.com/c/oo997auowhq8" target="_blank" rel="noopener">Claude Code 101&nbsp;↗</a> · <a href="https://verify.skilljar.com/c/e77jvb33n3ou" target="_blank" rel="noopener">Claude Platform 101&nbsp;↗</a> · <a href="https://verify.skilljar.com/c/r44htcsekbga" target="_blank" rel="noopener">Introduction to Claude Cowork&nbsp;↗</a> · <a href="https://verify.skilljar.com/c/c8zgh2i9dfwx" target="_blank" rel="noopener">Claude Code in Action&nbsp;↗</a> · <a href="https://verify.skilljar.com/c/x5ogrfwx4rcg" target="_blank" rel="noopener">AI Fluency: Framework &amp; Foundations&nbsp;↗</a> · Building with the Claude API</template>
+              <div class="fart fart--cert">
+                <div class="fart__head"><span>CERTIFIED</span><span>DEEPLEARNING.AI · ANTHROPIC</span></div>
+                <span class="ct__big">8</span>
+                <ol class="ct__list">
+                  <li><a class="ct__stack" href="https://coursera.org/verify/XHOCTF6FYOV0" target="_blank" rel="noopener"><span>Neural Networks &amp; Deep Learning<i>&nbsp;↗</i><em>DeepLearning.AI · Coursera</em></span></a></li>
+                  <li><a href="https://verify.skilljar.com/c/tdkjse3ngbuw" target="_blank" rel="noopener">Claude 101</a></li>
+                  <li><a href="https://verify.skilljar.com/c/oo997auowhq8" target="_blank" rel="noopener">Claude Code 101</a></li>
+                  <li><a href="https://verify.skilljar.com/c/e77jvb33n3ou" target="_blank" rel="noopener">Claude Platform 101</a></li>
+                  <li><a href="https://verify.skilljar.com/c/r44htcsekbga" target="_blank" rel="noopener">Intro to Claude Cowork</a></li>
+                  <li><a href="https://verify.skilljar.com/c/c8zgh2i9dfwx" target="_blank" rel="noopener">Claude Code in Action</a></li>
+                  <li><a href="https://verify.skilljar.com/c/x5ogrfwx4rcg" target="_blank" rel="noopener">AI Fluency: Framework &amp; Foundations</a></li>
+                  <li>Building with the Claude API</li>
+                </ol>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="beyond__foot container">
+          <div class="beyond__info">
+            <span class="micro" id="flowMeta">INTERNSHIP — IIT BOMBAY · MOOD INDIGO</span>
+            <div class="beyond__swap">
+              <h3 id="flowTitle">Machine Learning Internship</h3>
+              <p id="flowDesc">Selected for IIT Bombay’s Mood Indigo ML internship program — built a model to predict stock prices with data preprocessing, feature engineering and model evaluation.</p>
+              <a class="beyond__link roll" id="flowLink" href="https://github.com/katabathunilohith/Stock-Price-Prediction-ML" target="_blank" rel="noopener"><span class="roll__inner" data-text="VIEW REPO ↗">VIEW REPO ↗</span></a>
+            </div>
+            <span class="beyond__progress"><i id="flowBar"></i></span>
+          </div>
+          <div class="pager">
+            <div class="pager__dashes" id="flowDashes"></div>
+            <span class="micro pager__count"><b id="flowIndex">01</b> / <span id="flowTotal">06</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about__grid container">
+        <div class="about__text">
+          <span class="micro" data-fade>04 — PROFILE</span>
+          <h2 class="display-title" id="about-title" data-lines><span class="line"><span>ABOUT ME</span></span></h2>
+          <p class="about__lead" data-words>I am LOHITH — a computer science student at SRM University AP, specialising in Product Engineering with AI. I build fast, thoughtful web products and solve hard problems one algorithm at a time.</p>
+          <p class="about__body" data-fade>My work sits where engineering meets interface: Knit, a collaborative community platform built at a hackathon, a WebRTC video-chat clone, pixel-accurate UI studies, and full-stack apps built with React, Spring Boot and Node.js.</p>
+          <p class="about__body" data-fade>Outside the editor I practise daily on CodeChef and LeetCode, and I’m currently contributing to IEEE SA P3382 — studying computer-vision and image-quality metrics on MRI noise.</p>
+
+          <dl class="about__stats">
+            <div class="stat" data-fade><dt class="micro">CGPA</dt><dd><span data-count="9.64" data-decimals="2">9.64</span></dd></div>
+            <div class="stat" data-fade><dt class="micro">PROBLEMS SOLVED</dt><dd><span data-count="392">392</span>+</dd></div>
+            <div class="stat" data-fade><dt class="micro">DAY STREAK</dt><dd><span data-count="241">241</span></dd></div>
+            <div class="stat" data-fade><dt class="micro">CERTIFICATIONS</dt><dd><span data-count="8">8</span></dd></div>
+          </dl>
+
+          <div class="edu" data-fade>
+            <span class="micro">EDUCATION</span>
+            <ul>
+              <li><span class="edu__when">2025 — 2029</span><span class="edu__what"><b>SRM University AP</b> B.Tech CSE — Product Engineering with AI</span></li>
+              <li><span class="edu__when">XI — XII</span><span class="edu__what"><b>FIITJEE, Miyapur</b> Intermediate · Hyderabad</span></li>
+              <li><span class="edu__when">SECONDARY</span><span class="edu__what"><b>Kennedy High — The Global School</b> Secondary Education</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <figure class="portrait">
+          <div class="portrait__card" data-cursor="HELLO">
+            <div class="portrait__mask"><div class="portrait__mask-inner">
+              <img src="assets/img/portrait.webp" alt="Lohith Katabathuni" width="1000" height="1333" loading="lazy" decoding="async">
+            </div></div>
+            <i class="portrait__glare"></i>
+          </div>
+          <figcaption class="micro"><span>LOHITH KATABATHUNI</span><span>CSE ’29</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__top">
+          <span class="micro" data-fade>05 // CONTACT &amp; COLLABORATION</span>
+          <span class="micro contact__status" data-fade><i class="pulse"></i>OPEN TO INTERNSHIPS<i class="contact__status-line"></i></span>
+        </div>
+
+        <h2 class="contact__title" id="contact-title" data-lines>
+          <span class="line"><span>LET’S</span></span>
+          <span class="line"><span>BUILD</span></span>
+          <span class="line ghost"><span>SOMETHING.</span></span>
+        </h2>
+
+        <div class="contact__grid">
+          <a class="clink" href="mailto:katabathuni.lohith@gmail.com" data-fade>
+            <span class="micro">DIRECT INQUIRIES</span>
+            <span class="clink__title">EMAIL</span>
+            <span class="clink__value">katabathuni.lohith@gmail.com</span>
+            <span class="clink__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="clink" href="https://github.com/katabathunilohith" target="_blank" rel="noopener" data-fade>
+            <span class="micro">CODE REPOSITORY</span>
+            <span class="clink__title">GITHUB</span>
+            <span class="clink__value">github.com/katabathunilohith</span>
+            <span class="clink__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="clink" href="https://www.linkedin.com/in/lohith-katabathuni-01ab2238b/" target="_blank" rel="noopener" data-fade>
+            <span class="micro">PROFESSIONAL NETWORK</span>
+            <span class="clink__title">LINKEDIN</span>
+            <span class="clink__value">in/lohith-katabathuni</span>
+            <span class="clink__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="clink" href="assets/Lohith_Katabathuni_Resume.pdf?v=2026-09-30" target="_blank" rel="noopener" data-fade>
+            <span class="micro">CURRICULUM VITAE</span>
+            <span class="clink__title">RÉSUMÉ</span>
+            <span class="clink__value">Download PDF</span>
+            <span class="clink__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <footer class="footer container">
+        <span>© 2026 LOHITH KATABATHUNI. ALL RIGHTS RESERVED</span>
+        <span class="footer__mid">PORTFOLIO — ENGINEERING &amp; PRODUCT</span>
+        <a href="#top" class="roll"><span class="roll__inner" data-text="BACK TO TOP ↑">BACK TO TOP ↑</span></a>
+      </footer>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
+  <script src="js/glitch.js"></script>
+  <script src="js/visuals.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
